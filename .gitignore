@@ -1,0 +1,49 @@
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.ipynb_checkpoints/
+
+# 模型权重文件（太大，不适合放git）
+*.pth
+*.h5
+*.pkl
+*.pt
+
+# 数据（原始数据太大，一律不提交）
+# 元数据、划分清单和排除日志请放 data_manifest/，那些是要入库的
+data/*
+*.wav
+*.dat
+
+# 临时文件
+*.tmp
+*.log
+~$*.docx
+
+# Claude Code 本地配置（每台电脑自己的权限设置，不进仓库）
+.claude/settings.local.json
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本地归档（旧版计划书等，只存在组长本机）
+旧计划/
+
+# 组长的个人笔记（不入库）
+刘文鑫_我要干什么_通俗版.md
+
+# 冻结模型权重（结构配置要入库，权重本身不入库）
+checkpoints/**/*.pth
+checkpoints/**/*.pt
+checkpoints/**/*.h5
